@@ -1,4 +1,4 @@
-# Event Farm Full Stack Project
+# Full Stack Project - NASA's Rover Image Gallery
 
 Author: **David Schmidt**
 Date: **2021-09-02**
