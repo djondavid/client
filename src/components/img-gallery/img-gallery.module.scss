@@ -1,0 +1,22 @@
+.gallery {
+  padding: 1em;
+  margin: 1em 0;
+  border: 2px solid #4a4b4e;
+}
+// Override Bootstrap classes
+:global .card {
+  border-radius: 0 !important;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+:global img.card-img-top {
+  padding: 2px;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  :global img.card-img-top {
+    height: 200px;
+  }
+}

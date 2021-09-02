@@ -1,0 +1,13 @@
+// Override Bootstrap's default options
+$enable-rounded: false; //true !default;
+
+// Override Bootstrap's default variables
+// NASA's font is "Titillium Web" (looks like Star Trek)
+$font-family-sans-serif: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif !important;
+// Colors
+$body-bg: #282c34;
+$body-color: #fefcfa;
+$border-color: #999;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';

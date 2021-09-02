@@ -1,0 +1,73 @@
+.menuBar {
+  height: 140px;
+  margin-bottom: 1em;
+  /* background-color: #32353b; */
+  background: rgb(106,108,110); 
+  background: linear-gradient(90deg, rgba(106,108,110,1) 0%, rgba(66,69,75,1) 40%, rgba(40,44,52,1) 100%);
+  padding: 0.5em 1em;
+
+  .logo {
+    height: 30px;
+    float: left;
+  }
+
+  nav { 
+    float: right;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-left: 2em;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+
+    a::before {
+      display: block;
+      position: absolute;
+      top: 0.25rem;
+      content: '';
+      width: 0;
+      height: 0.25rem;
+      background-color: #dadcde; /* #0741AC; */
+      transition: width ease-in-out 150ms;
+    }
+
+    a:hover::before {
+      width: 100%;
+    }
+
+    a {
+      color: #fafcfe;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      color: #dadcde;
+    }
+    a.active, a.active:hover {
+      color: #0dcaf0;
+    }
+  }
+}
+:global header.menuBar::after {
+  content: '';
+  clear: both;
+}
+
+@media screen and (min-width: 768px) {
+  .menuBar {
+    height: 70px;
+    .logo {
+      height: 50px;
+    }
+  }
+}

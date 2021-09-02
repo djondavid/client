@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Event Farm Full Stack Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Author: **David Schmidt**
+Date: **2021-09-02**
 
-## Available Scripts
+## Frameworks Used
 
-In the project directory, you can run:
+* Front End: React
+* Back End: Node (not implemented as it seemed unnecessary save for protecting the API key)
+* Styles: Bootstrap 4
 
-### `npm start`
+## What I Liked About this Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Very flexible, chance to be creative
+* Not too difficult, didn't take forever
+* Real world application and using API calls
+## What Would I Do If I Had More Time
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Modal Carousel of selected photo
+* Move NASA API calls to Node server side to protect API KEY in secret .env file and create server side end points for the front end to hit to mirror the API functionality.
+* Get the Camera data dynamically from the Rover Manifest data rather than hard coding it from the API documentation.
+* Make the Camera filter smarter, check the data first to get the number of images on each camera and display that in the camera filter drop down (remove any cameras with 0 images)
+* Use Bootstrap navbar or make my menubar have a mobile menu (overflows on phones)
+* Fix the filters async load and filter issues; only call the API when all the filters have been set.
+## What I Didn't Like About This Project
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Naming convention "images" or "photos"?
+* Dates, dates, and more dates. (Everyone hates dealing with dates, don't they?)
+* Confusion about the filter by date in the instructions. There are earth dates and mars solor dates, can only really filter by one.
+* Confusion about the "timestamp" and "other metadata" in the instructions. There is no "timestamp" in the API photo date, only earth date (no time). What other metadata would be useful to an end user?
+* I wish there were source urls for thumbnail or smaller sized images in the API photo data so we could display thumbs at lower payload rather than very large image source files. Also wish there were file dimmension sizes available, and/or aspect ratio in the photo data so one could properly layout different sized/ratio images.
